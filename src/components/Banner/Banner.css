@@ -1,0 +1,31 @@
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.banner img {
+    height: 223px;
+    border-radius: 25px;
+}
+
+.banner h1 {
+    position: absolute;
+    z-index: 10;
+    color: var(--white);
+}
+
+.bannerFilter {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 5;
+    background: #000000;
+    opacity: 0.3;
+    mix-blend-mode: darken;
+}
+
+/* mix-blend-mode: multiply; */
