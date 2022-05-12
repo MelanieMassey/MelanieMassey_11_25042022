@@ -1,4 +1,3 @@
-import banner from "../../assets/banner.png";
 import "./Banner.css"
 
 function Banner({text, img, imgDescription}) {
