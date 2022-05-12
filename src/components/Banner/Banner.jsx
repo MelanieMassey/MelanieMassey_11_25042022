@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types'
 import "./Banner.css"
+
 
 function Banner({text, img, imgDescription}) {
     return (
@@ -8,6 +10,12 @@ function Banner({text, img, imgDescription}) {
             <div className="bannerFilter"></div>
         </div>
     )
+}
+
+Banner.propTypes = {
+    text: PropTypes.string,
+    img: PropTypes.string,
+    imgDescription: PropTypes.string,
 }
 
 export default Banner;

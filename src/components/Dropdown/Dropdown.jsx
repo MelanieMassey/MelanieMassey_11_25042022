@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import './Dropdown.css';
 import arrowDown from '../../assets/arrow_down.png';
 import arrowUp from '../../assets/arrow_up.png';
@@ -14,8 +15,16 @@ function Dropdown({title, text}) {
     )
 }
 
+Dropdown.propTypes = {
+    title: PropTypes.string,
+    text: PropTypes.string,
+}
+
 function handleClick(e) {
     console.log(e.target)
+
+    const dropdownText = 
+
     switch (e.target.alt) {
         case 'Afficher contenu' :
             e.target.src = arrowUp

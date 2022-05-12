@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import './Card.css';
 
 /**
@@ -18,6 +19,10 @@ function Thumb(props) {
             <h2>{props.title}</h2>
         </article>
     )
+}
+
+Thumb.propTypes = {
+    props: PropTypes.object,
 }
 
 export default Thumb;
