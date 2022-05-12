@@ -3,6 +3,8 @@ import './Dropdown.css';
 import arrowDown from '../../assets/arrow_down.png';
 import arrowUp from '../../assets/arrow_up.png';
 
+
+
 function Dropdown({title, text}) {
     return (
         <div className='dropdown'>
@@ -23,17 +25,15 @@ Dropdown.propTypes = {
 function handleClick(e) {
     console.log(e.target)
 
-    const dropdownText = 
-
-    switch (e.target.alt) {
-        case 'Afficher contenu' :
-            e.target.src = arrowUp
-            e.target.alt = "Cacher contenu"
-        break;
-        case 'Cacher contenu' :
-            e.target.src = arrowDown
-            e.target.alt = "Afficher contenu"
-    }
+    // switch (e.target.alt) {
+    //     case 'Afficher contenu' :
+    //         e.target.src = arrowUp
+    //         e.target.alt = "Cacher contenu"
+    //     break;
+    //     case 'Cacher contenu' :
+    //         e.target.src = arrowDown
+    //         e.target.alt = "Afficher contenu"
+    // }
     // if(e.target.alt === "Afficher contenu") {
     //     e.target.src = arrowUp
     //     e.target.alt = "Cacher contenu"
