@@ -11,10 +11,10 @@ import "./Card.css"
  * @returns
  */
 function Card(props) {
-  console.log(props)
+  // console.log(props)
   return (
     <article>
-      <img src={props.src} alt={props.title} />
+      <img src={props.cover} alt={props.title} />
       <div></div>
       <h2>{props.title}</h2>
     </article>

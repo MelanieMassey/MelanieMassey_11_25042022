@@ -1,0 +1,75 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+h4, h5, h6 {
+    color: var(--main);
+    margin: 0;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+h5, h6 {
+    font-size: 18px;
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+.accomodationDropdowns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
+
+.accomodationDetails {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+}
+
+.accomodationDetails img {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tagsSection {
+    display: flex;
+    
+}
+
+.hostCard {
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    font-family: "Font Awesome 6 Free";
+    color: yellow;
+}
+.stars::before {
+    font-weight: bold;
+}
+
+.oneStar::before{
+    content:"\f005";
+}
+.oneStar::after{
+    content:"\f005\f005\f005\f005";
+}
+
+
+.twoStars::before{
+    content:"\f005\f005";
+}
+.twoStars::after{
+    content:"\f005\f005\f005";
+}
+
+
+.fiveStars::before{
+    content:"\f005\f005\f005\f005\f005";
+}
+.fiveStars::after{
+    content:"";
+}

@@ -5,9 +5,9 @@ import Home from './pages/Home';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import reportWebVitals from './reportWebVitals';
 import About from './pages/About';
 import Page404 from './pages/Page404';
+import Accomodation from './pages/Accomodation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,13 +17,15 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/accomodation/:accomodationId" element={<Team />} /> */}
+          <Route path="/accomodation/:accomodationId" element={<Accomodation />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
     </BrowserRouter>
     <Footer />
   </React.StrictMode>
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

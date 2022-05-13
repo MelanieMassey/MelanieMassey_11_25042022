@@ -7,6 +7,10 @@
     margin: 50px 0;
 }
 
+.dropdown.superRadius{
+    border-radius: 1rem;
+}
+
 .dropdown_header {
     height: 47px;
     background-color: var(--main);
