@@ -1,0 +1,32 @@
+.slider {
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.photo {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 50% - 40px;
+    left: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 50% - 40px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
