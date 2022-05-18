@@ -13,3 +13,7 @@ nav {
 nav a {
     padding: 0 10px 0 10px;
 }
+
+.active {
+    text-decoration-line: underline;
+}
