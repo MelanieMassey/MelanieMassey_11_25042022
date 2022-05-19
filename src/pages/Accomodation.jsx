@@ -39,18 +39,24 @@ function Accomodation() {
   return (
     <section className="accomodationSection">
       <div className="slider">
-        <img
-          src={arrowLeft}
-          className="arrowLeft"
-          onClick={previousSlide}
-          alt="Précédente"
-        />
-        <img
-          src={arrowRight}
-          className="arrowRight"
-          onClick={nextSlide}
-          alt="Suivante"
-        />
+        {accomodation.pictures.length > 1 ? (
+          <div className="arrows">
+            <img
+              src={arrowLeft}
+              className="arrowLeft"
+              onClick={previousSlide}
+              alt="Précédente"
+            />
+            <img
+              src={arrowRight}
+              className="arrowRight"
+              onClick={nextSlide}
+              alt="Suivante"
+            />
+          </div>
+        ) : (
+          ""
+        )}
         {accomodation.pictures.map((picture, index) => {
           if (index === current) {
             return (
