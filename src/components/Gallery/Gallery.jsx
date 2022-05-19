@@ -6,11 +6,11 @@ import "./Gallery.css"
  * @returns Le carrousel des photos du logement
  */
 
-function Gallery(pictures) {
-  console.log(pictures)
+function Gallery({pictures}) {
+  
   return (
     <section>
-      {pictures.map((picture) => {
+      {{pictures}.map((picture) => {
         return <img src={picture} alt="photos du logement" />
       })}
     </section>

@@ -1,3 +1,7 @@
+.tagsSection {
+    padding: 10px 0;
+}
+
 .tags {
     height: 25px;
     background-color: var(--main);
@@ -5,5 +9,5 @@
     border-radius: 10px;
     font-size: 14px;
     padding: 5px 40px;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }

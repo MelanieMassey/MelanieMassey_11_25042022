@@ -12,6 +12,7 @@ h5, h6 {
     font-size: 18px;
     font-weight: 100;
     padding-right: 10px;
+    margin: 10px 0;
 }
 
 .accomodationDropdowns {
@@ -98,3 +99,52 @@ h5, h6 {
 .fiveStars::after{
     content:"";
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media screen and (max-width:430px) {
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .accomodationDetails {
+        flex-direction: column;
+        margin: 20px 0 0 0;
+    }
+    .stars {
+        font-size: 15px;
+        text-align: left;
+        order: 1;
+    }
+    .hostId {
+        order: 2;
+        margin: 0;
+    }
+    .hostCard {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .accomodationDetails img {
+        height: 32px;
+        width: 32px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .accomodationDropdowns {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+  }

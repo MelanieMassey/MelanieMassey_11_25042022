@@ -32,3 +32,19 @@ a {
   margin: 43px 0;
 }
 
+@media screen and (max-width:430px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    background-color: transparent;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+

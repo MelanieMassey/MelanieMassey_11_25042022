@@ -12,7 +12,7 @@
 }
 
 .dropdown_header {
-    height: 47px;
+    height: 52px;
     background-color: var(--main);
     color: var(--white);
     display: flex;
@@ -24,6 +24,7 @@
 
 h3 {
     font-size: 24px;
+    font-weight: 500;
 }
 
 .dropdown p {
@@ -36,3 +37,23 @@ h3 {
     margin: 0;
     padding: 36px 18px 19px 18px;
 }
+
+@media screen and (max-width:430px) {
+    .dropdown {
+        margin: 20px 0 0 0;
+    }
+    h3 {
+        font-size: 13px;
+    }
+    .dropdown_header {
+        height: 30px;
+    }
+    .dropdown_header img {
+        width: 15px;
+        height: 9px;
+    }
+    .dropdown p {
+        font-size: 12px;
+        padding: 23px 7px 50px 11px;
+    }
+  }

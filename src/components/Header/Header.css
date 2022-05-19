@@ -17,3 +17,19 @@ nav a {
 .active {
     text-decoration-line: underline;
 }
+
+@media screen and (max-width:430px) {
+    body {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .logo {
+        width: 145px;
+    }
+
+    nav {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+  }
