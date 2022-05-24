@@ -27,7 +27,8 @@ h3 {
     font-weight: 500;
 }
 
-.dropdown p {
+.dropdown p,
+.dropdown ul {
     color: var(--main);
     font-size: 24px;
     font-weight: 400;
@@ -52,8 +53,9 @@ h3 {
         width: 15px;
         height: 9px;
     }
-    .dropdown p {
+    .dropdown p,
+    .dropdown ul {
         font-size: 12px;
-        padding: 23px 7px 50px 11px;
+        padding: 25px 7px 25px 11px;
     }
   }

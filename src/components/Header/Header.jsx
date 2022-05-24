@@ -1,36 +1,28 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import logo from "../../assets/logo.png"
 import "./Header.css"
-import { useState } from "react"
 
 function Header() {
-  const [homeCurrentPage, setHomeCurrentPage] = useState(true)
-  const [aboutCurrentPage, setAboutCurrentPage] = useState(false)
-
   return (
     <header>
       <img src={logo} className="logo" alt="logo Kasa" />
       <nav>
-        <Link
+        <NavLink
           to="/"
-          className={homeCurrentPage ? "active" : ""}
-          onClick={() => {
-            setHomeCurrentPage(true)
-            setAboutCurrentPage(false)
-          }}
+          className={(homeCurrentPage) =>
+            homeCurrentPage.isActive ? "active" : ""
+          }
         >
           Accueil
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/about"
-          className={aboutCurrentPage ? "active" : ""}
-          onClick={() => {
-            setHomeCurrentPage(false)
-            setAboutCurrentPage(true)
-          }}
+          className={(aboutCurrentPage) =>
+            aboutCurrentPage.isActive ? "active" : ""
+          }
         >
           A Propos
-        </Link>
+        </NavLink>
       </nav>
     </header>
   )

@@ -23,7 +23,7 @@ function Dropdown({ title, text, extraClass }) {
           onClick={() => setDropdown(false)}
         />
       </div>
-      <p>{text}</p>
+      {typeof text === "object" ? convertArray(text) : <p>{text}</p>}
     </div>
   ) : (
     <div className="dropdown">
@@ -36,6 +36,16 @@ function Dropdown({ title, text, extraClass }) {
         />
       </div>
     </div>
+  )
+}
+
+function convertArray(arr) {
+  return (
+    <ul>
+      {arr.map((equipment) => (
+        <li>{equipment}</li>
+      ))}
+    </ul>
   )
 }
 

@@ -8,10 +8,21 @@ h4 {
     font-size: 36px;
 }
 
+h5 {
+    padding-left: 200px;
+    padding-right: 15px;
+    text-align: right;
+}
+
 h5, h6 {
     font-size: 18px;
     font-weight: 100;
+}
+
+h6 {
+    
     padding-right: 10px;
+    
     margin: 10px 0;
 }
 
@@ -22,9 +33,19 @@ h5, h6 {
 }
 
 .accomodationDetails {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 50px 0 0 0;
+}
+
+.hostCard {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0 0 0;
+    align-items: right;
+    flex-direction: column;
+    padding-bottom: 25px;
 }
 
 .accomodationDetails img {
@@ -36,11 +57,14 @@ h5, h6 {
 
 .tagsSection {
     display: flex;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .hostId {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 25px;
 }
@@ -112,13 +136,14 @@ ul {
     }
     h5 {
         font-size: 12px;
+        padding-left: 100px;
     }
     h6 {
         font-size: 14px;
         margin: 5px 0;
     }
     .accomodationDetails {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         margin: 20px 0 0 0;
     }
     .stars {
@@ -132,7 +157,7 @@ ul {
     }
     .hostCard {
         width: 100%;
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
