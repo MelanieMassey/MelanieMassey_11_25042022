@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from './pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 import About from './pages/About';
 import Page404 from './pages/Page404';
 import Accomodation from './pages/Accomodation';
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-        <Header />
+      <Header />  
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

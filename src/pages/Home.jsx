@@ -15,12 +15,11 @@ function Home() {
       />
       <section className="gallery">
         {getAllAccomodation().map((logement) => (
-          <Link to={`/accomodation/${logement.id}`}>
+          <Link to={`/accomodation/${logement.id}`} key={logement.id}>
             <Card
               cover={logement.cover}
               title={logement.title}
               id={logement.id}
-              key={logement.id}
             />
           </Link>
         ))}

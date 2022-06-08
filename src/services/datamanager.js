@@ -1,4 +1,5 @@
 import logements from '../data/logements.json';
+import Page404 from '../pages/Page404';
 
 /**
  * @typedef {Object} Accomodation
@@ -39,11 +40,19 @@ function getAllAccomodation(){
  * @param   {String} id
  * @return  {Accomodation}  
  */
- function getAccomodationById(id){
+function getAccomodationById(id){
+
+    // logements.map((logement) => {
+    //     if(id === logement.id) {
+    //         return logements.filter((logement)=>logement.id===id)[0];
+    //     } else {
+    //         return <Page404/>
+    //     }
+    // })
     return logements.filter((logement)=>logement.id===id)[0];
 }
 
 export {
     getAccomodationById,
     getAllAccomodation
-}
+} 

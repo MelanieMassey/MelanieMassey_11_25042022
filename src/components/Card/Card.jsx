@@ -1,4 +1,3 @@
-// import PropTypes from "prop-types"
 import "./Card.css"
 
 /**
@@ -20,9 +19,5 @@ function Card(props) {
     </article>
   )
 }
-
-// Card.propTypes = {
-//   props: PropTypes.object,
-// }
 
 export default Card
